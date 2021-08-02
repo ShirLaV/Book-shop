@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Book Shop</title>
+</head>
+
+<body onload="onInit()">
+    <header>
+        <h1>welcome to my book shop</h1>
+    </header>
+    <section class="main-container">
+        <section class="adding">
+            <div class="adding-optios">
+                <input name="book-name" placeholder="Name">
+                <input name="book-price" placeholder="Price">
+            </div>
+            <button onclick="onAddBook()">Add Book</button>
+        </section>
+
+        <section class="books-container">
+            <table class="book-table">
+                <thead>
+                    <tr>
+                        <td onclick="onSortTableBy('id')">Id</td>
+                        <td onclick="onSortTableBy('title')">Title</td>
+                        <td onclick="onSortTableBy('price')">Price</td>
+                        <td>Rate</td>
+                        <td>Actions</td>
+                    </tr>
+                </thead>
+                <tbody class="books"></tbody>
+            </table>
+        </section>
+
+        <section class="paging">
+            <button onclick="onPageBack(true)">⬅</button>
+            <!-- <span class="pages-numbers"></span> -->
+            <button onclick="onPageBack(false)">➡</button>
+        </section>
+    </section>
+    <section class="modal" hidden>
+        <button onclick="onCloseModal()">x</button>
+        <h4>Rate this book</h4>
+        <section class="rating">
+            <button onclick="onUpdateRate(true)">-</button>
+            <span> 0 </span>
+            <button onclick="onUpdateRate(false)">+</button><br>
+            <button onclick="onRateBook()">submit</button>
+        </section>
+        <h5></h5>
+        <h6></h6>
+        <p></p>
+    </section>
+
+    <script src="js/utiles.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/books-service.js"></script>
+    <script src="js/books-controller.js"></script>
+
+</body>
+
+</html>

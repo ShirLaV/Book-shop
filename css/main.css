@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 238, 215);
+    /* background: url("../images/books.png") no-repeat bottom right ;     */
+    color:rgb(65, 55, 42);
+    text-align: center;
+
+}
+
+header {
+    background: url("../images/wood.jpg") ;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color:rgb(221, 219, 216);
+    margin: 0;
+    padding: 4px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.adding {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.adding button {
+    background-color: rgb(167, 138, 122);
+    color: white;
+}
+
+.adding button:hover {
+    background-color: rgb(140, 115, 102);
+}
+
+.book-table {
+    /* box-shadow: 10px 10px 20px #f0f2f5, -10px -10px 20px #f0f2f5; */
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+thead {
+    /* background-color: rgba(170, 149, 122, 0.816); */
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+    border-bottom: 1px solid rgb(174, 173, 173);
+}
+
+table, td, tr {
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.read-btn {
+    background-color: rgb(158, 158, 233);
+}
+
+.upd-btn {
+    background-color: rgb(242, 204, 133);
+}
+
+.dlt-btn {
+    background-color: rgb(233, 139, 105);
+}
+
+.modal {
+    background-color: rgb(255, 250, 250);
+    border-left: 5px solid rgb(109, 96, 83);
+    color:rgb(49, 38, 23);
+    position: absolute;
+    min-height: 100%;
+    top: 0;
+    right: 0;
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+}
+
+.modal button {
+    background-color: rgb(126, 110, 90);
+    color: white;
+    margin-top: 7px;
+}
+
+.paging {
+    text-align: center;
+    background-color: #fff;
+    /* margin-top: 20px; */
+}
